@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Generador Dinámico de Instrumentos</title>
+	<meta name="autor" content="Saray Serrano Enciso">
+	<meta name="description" content="Esto es una prueba de la posible plataforma generadora de instrumentos.">
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="icono.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<main class="principal">
+	<header class="cabecera">
+  		<h1>Generador Dinámico de Instrumentos (GDI)</h1>
+	</header>
+	<hr>
+  	<section class="variables">
+		<h2>Variables del Instrumento</h2>
+		<form>
+	    <div>
+	      <h3>Competencias</h3>
+	      <p>
+	      <label><input name="competencias" type="checkbox" id="competencias_0" value="alf" checked="checked">Alfabetización Estadística </label>
+	      <label><input name="competencias" type="checkbox" id="competencias_1" value="raz" checked="checked">Razonamiento Estadístico </label>
+		  </p>
+        </div>
+	    <div>
+	      <h3>Idioma</h3>
+	      <p>
+	      <label><input name="Idioma" type="radio" id="Idioma_0" value="esp" checked="checked">Español </label>
+	      <label><input type="radio" name="Idioma" value="ing" id="Idioma_1">Inglés </label>
+	      <label><input type="radio" name="Idioma" value="por" id="Idioma_2">Portugués </label>
+          </p>
+        </div>
+	    <div>
+	      <h3>Moneda</h3>
+	      <p>
+	      <label><input name="Moneda" type="radio" id="Moneda_0" value="mxn" checked="checked">Peso Mexicano </label>
+	      <label><input type="radio" name="Moneda" value="dol" id="Moneda_1">Dólares </label>
+	      <label><input type="radio" name="Moneda" value="rbra" id="Moneda_2">Reales Brasileños </label>
+          </p>
+        </div>
+      	<div>
+	      <h3>Contexto</h3>
+		  <p>
+		  <label><input type="radio" name="Contexto" value="cont-gen" id="Contexto_0">Genérico </label>
+		  <label><input name="Contexto" type="radio" id="Contexto_1" value="cont-mx" checked="checked">Mexicano </label>
+		  <label><input type="radio" name="Contexto" value="cont-sura" id="Contexto_2">Suramericano </label>
+	      </p>
+      	</div>
+		<div>
+		  <input type="submit" formmethod="POST" title="Generar" value="Generar">
+		  <input type="reset">
+	    </div>
+	  	</form>
+  	</section>
+  	<hr>
+	<section class="instrumento">
+		<h3>Nombre de la Institución</h3>
+		<div class="formato-instrumento">
+	 		<p>Nombre completo:____________________________________________________________ </p><p>Fecha de aplicación: 14 de Marzo de 2020</p>
+		</div>
+		<div class="formato-instrumento-preguntas">
+	 		<div class="preguntas-category">
+	  			<h3>Competencia</h3>
+			<div class="item-pregunta">
+				<p class="enunciado">1. Enunciado</p>
+				<p class="opciones">A. Opción 1</p>
+				<p class="opciones">B. Opción 2</p>
+				<p class="opciones">C. Opción 3</p>
+				<p class="opciones">D. Opción 4</p>
+			</div>
+			<hr>
+			<div class="item-pregunta">
+				<p class="enunciado">2. Enunciado</p>
+				<p class="opciones">A. Opción 1</p>
+				<p class="opciones">B. Opción 2</p>
+				<p class="opciones">C. Opción 3</p>
+				<p class="opciones">D. Opción 4</p>
+			</div>
+			<hr>
+			</div>
+			
+		</div>
+	</section>
+	<hr>
+	<section class="hoja-respuestas-estudiante">
+		<h3>Hoja de Respuestas - Estudiantes</h3>
+		<div class="item-respuesta">
+			
+			<table class="tabla-respuestas">
+				<tr>
+					<td rowspan="2">
+					1</td>
+					<td>
+						A
+					</td>
+					<td>
+						B
+					</td>
+					<td>
+						C
+					</td>
+					<td>
+						D
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+				</tr>
+			</table>
+		
+		</div>
+		<div class="item-respuesta">
+			
+			<table class="tabla-respuestas">
+				<tr>
+					<td rowspan="2">
+					2</td>
+					<td>
+						A
+					</td>
+					<td>
+						B
+					</td>
+					<td>
+						C
+					</td>
+					<td>
+						D
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+				</tr>
+			</table>
+		
+		</div>
+		
+		
+		
+		
+	</section>
+		<hr>
+<section class="hoja-respuestas-solved">
+		<h3>Hoja de Respuestas - Solucionado</h3>
+		<div class="item-respuesta">
+			
+			<table class="tabla-respuestas">
+				<tr>
+					<td rowspan="2">
+					1</td>
+					<td>
+						A
+					</td>
+					<td>
+						B
+					</td>
+					<td>
+						C
+					</td>
+					<td>
+						D
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="icono-respuesta-rellena"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+				</tr>
+			</table>
+		
+		</div>
+		<div class="item-respuesta">
+			
+			<table class="tabla-respuestas">
+				<tr>
+					<td rowspan="2">
+					2</td>
+					<td>
+						A
+					</td>
+					<td>
+						B
+					</td>
+					<td>
+						C
+					</td>
+					<td>
+						D
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta-rellena"></p>
+					</td>
+					<td>
+						<p class="icono-respuesta"></p>
+					</td>
+				</tr>
+			</table>
+		</div>		
+	</section>
+
+</main>
+
+<aside>
+	<div class="contacto">
+    <a href="#" class="icono-facebook" target="_blank"></a>
+    <a href="#" class="icono-twitter" target="_blank"></a>
+    <a href="#" class="icono-youtube" target="_blank"></a>
+    <a href="#" class="icono-instagram" target="_blank"></a>
+  </div>
+	
+</aside>
+
+	
+</body>
+</html>
