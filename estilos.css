@@ -201,12 +201,24 @@ td{
 .principal .variables .var-op {
 	border-style: solid;
 	display: inline-block;
-	margin-left: 5px;
+	margin-left: 3px;
 	padding-right: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
+	border-radius: 8px;
+	border-width: thin;
 }
 .variables .var-op h3 {
 	margin-top: 0px;
 	display: block;
 	margin-bottom: 0px;
+	
+}
+.variables .var-op p {
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+
+.var-op p .lista-temas {
+
 }
