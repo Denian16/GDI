@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 
-	<title>Generador Dinámico de Instrumentos</title>
+	<title>GDI-Pre-Alpha</title>
 	<meta name="autor" content="Saray Serrano Enciso">
 	<meta name="description" content="Esto es una prueba de la posible plataforma generadora de instrumentos.">
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="icono.min.css">
-	<meta charset="utf-8">
+	<script type="text/javascript" src="funcionalidades.js"></script>
 </head>
 <body>
-	<main class="principal">
+	<main id="primario" class="principal">
 	<header class="cabecera">
   		<h1>Generador Dinámico de Instrumentos (GDI)</h1>
 	</header>
@@ -42,7 +41,6 @@
 				<label>
 				  <input name="Niveles" type="checkbox" id="Niveles_4" value="abstract" checked="checked">
 				  Abstracto Extendido</label>
-
           </p>
 		</div>
 	    <div class="var-op">
@@ -64,14 +62,21 @@
 	        Tema 3</label>
           </p>
         </div>
-      	<div class="var-op">
-	      <h3>Contexto</h3>
+	  <div class="var-op">
+		<h3>Datos Generales</h3>
 		  <p>
-		  <label><input type="radio" name="Contexto" value="cont-gen" id="Contexto_0">Genérico </label>
-		  <label><input name="Contexto" type="radio" id="Contexto_1" value="cont-mx" checked="checked">Mexicano </label>
-		  <label><input type="radio" name="Contexto" value="cont-sura" id="Contexto_2">Suramericano </label>
-	      </p>
-      	</div>
+		  <input type="text" class="data-generic" id="nombre-insti" placeholder="Nombre de Institución" value="Prueba de texto">
+		  <label><input name="op-name" type="checkbox" id="op-name-show" value="opNS" checked="checked">Espacio para nombre.</label>
+		  <label><input name="op-fecha" type="checkbox" id="op-fecha-show" value="opFS" checked="checked">Espacio para fecha.</label>
+		</p>
+		</div>
+      	<div class="var-op">
+			<h3>Acciones</h3>
+			<p>
+				<button class="btn-generic" type="button" name="Generar" onclick="myPrueba()">Generar</button>
+				<button class="btn-generic" type="button" name="Generar">Recargar</button>
+			</p>
+		</div>
   	</section>
   	<hr>
 	<section class="instrumento">
@@ -99,14 +104,14 @@
 			</div>
 			<hr>
 			</div>
-			
+
 		</div>
 	</section>
 	<hr>
 	<section class="hoja-respuestas-estudiante">
 		<h3>Hoja de Respuestas - Estudiantes</h3>
 		<div class="item-respuesta">
-			
+
 			<table class="tabla-respuestas">
 				<tr>
 					<td rowspan="2">
@@ -139,10 +144,10 @@
 					</td>
 				</tr>
 			</table>
-		
+
 		</div>
 		<div class="item-respuesta">
-			
+
 			<table class="tabla-respuestas">
 				<tr>
 					<td rowspan="2">
@@ -175,18 +180,18 @@
 					</td>
 				</tr>
 			</table>
-		
+
 		</div>
-		
-		
-		
-		
+
+
+
+
 	</section>
 		<hr>
 <section class="hoja-respuestas-solved">
 		<h3>Hoja de Respuestas - Solucionado</h3>
 		<div class="item-respuesta">
-			
+
 			<table class="tabla-respuestas">
 				<tr>
 					<td rowspan="2">
@@ -219,10 +224,10 @@
 					</td>
 				</tr>
 			</table>
-		
+
 		</div>
 		<div class="item-respuesta">
-			
+
 			<table class="tabla-respuestas">
 				<tr>
 					<td rowspan="2">
@@ -255,21 +260,13 @@
 					</td>
 				</tr>
 			</table>
-		</div>		
+		</div>
 	</section>
+	<hr>
+	
 
 </main>
 
-<aside>
-	<div class="contacto">
-    <a href="#" class="icono-facebook" target="_blank"></a>
-    <a href="#" class="icono-twitter" target="_blank"></a>
-    <a href="#" class="icono-youtube" target="_blank"></a>
-    <a href="#" class="icono-instagram" target="_blank"></a>
-  </div>
-	
-</aside>
 
-	
 </body>
 </html>

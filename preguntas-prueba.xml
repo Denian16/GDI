@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preguntas>
+  <item category="alf" tema="re-datos" nivel-cog="5">
+    <id>0</id>
+    <enun lang="esp">¿Esto es un enunciado de una pregunta escrita en español? </enun>
+    <enun lang="ing">Is this a statement of a question written in English? </enun>
+    <enun lang="por">Esta é uma declaração de uma pergunta escrita em português? </enun>
+    <op-1 lang ="esp">Si, lo es</op-1>
+    <op-2 lang ="esp">No, no lo es</op-2>
+    <op-3 lang ="esp">Si, no lo es</op-3>
+    <op-4 lang ="esp">No, si lo es</op-4>
+    <op-1 lang ="ing">Yes, it is.</op-1>
+    <op-2 lang ="ing">No, it's not.</op-2>
+    <op-3 lang ="ing">Yes, it's not.</op-3>
+    <op-4 lang ="ing">No, it is.</op-4>
+    <op-1 lang ="por">Sim é isso.</op-1>
+    <op-2 lang ="por">Não, não é.</op-2>
+    <op-3 lang ="por">Sim não é.</op-3>
+    <op-4 lang ="por">Não, é isso.</op-4>
+  </item>
+  <item category="alf" tema="re-datos" nivel-cog="1">
+    <id>1</id>
+    <enun lang="esp">ENUNCIADO EN ESPAÑOL - ALFABETIZACIÓN </enun>
+    <enun lang="ing">SPOKEN IN SPANISH - ALPHABETIZATION </enun>
+    <enun lang="por">FALADO EM ESPANHOL - ALFABETIZAÇÃO </enun>
+    <op-1 lang ="esp">Opción 1 Español</op-1>
+    <op-2 lang ="esp">Opción 2 Español</op-2>
+    <op-3 lang ="esp">Opción 3 Español</op-3>
+    <op-4 lang ="esp">Opción 4 Español</op-4>
+    <op-1 lang ="ing">Opción 1 Inglés</op-1>
+    <op-2 lang ="ing">Opción 2 Inglés</op-2>
+    <op-3 lang ="ing">Opción 3 Inglés</op-3>
+    <op-4 lang ="ing">Opción 4 Inglés</op-4>
+    <op-1 lang ="por">Opción 1 Portugués</op-1>
+    <op-2 lang ="por">Opción 2 Portugués</op-2>
+    <op-3 lang ="por">Opción 3 Portugués</op-3>
+    <op-4 lang ="por">Opción 4 Portugués</op-4>
+  </item>
+  <item category="raz" tema="disp" nivel-cog="2">
+    <id>2</id>
+    <enun lang="esp">ENUNCIADO ESPAÑOL RAZONAMIENTO</enun>
+    <enun lang="ing">SPOKEN IN SPANISH - REASONING</enun>
+    <enun lang="por">FALADO EM ESPANHOL - RAZÃO </enun>
+    <op-1 lang ="esp">Opción 1 Español</op-1>
+    <op-2 lang ="esp">Opción 2 Español</op-2>
+    <op-3 lang ="esp">Opción 3 Español</op-3>
+    <op-4 lang ="esp">Opción 4 Español</op-4>
+    <op-1 lang ="ing">Opción 1 Inglés</op-1>
+    <op-2 lang ="ing">Opción 2 Inglés</op-2>
+    <op-3 lang ="ing">Opción 3 Inglés</op-3>
+    <op-4 lang ="ing">Opción 4 Inglés</op-4>
+    <op-1 lang ="por">Opción 1 Portugués</op-1>
+    <op-2 lang ="por">Opción 2 Portugués</op-2>
+    <op-3 lang ="por">Opción 3 Portugués</op-3>
+    <op-4 lang ="por">Opción 4 Portugués</op-4>
+  </item>
+</preguntas>
