@@ -35,7 +35,7 @@ function myFuntion(xml){
 		var divFormato = document.createElement("div");
 		divFormato.setAttribute("class", "formato-instrumento");
 		var pNF = document.createElement("p");
-		pnF.innerHTML = "Nombre completo:";
+		pNF.innerHTML = "Nombre completo:";
 		divFormato.appendChild(pNF);
 		instru.appendChild(divFormato);
 	 } 
@@ -73,4 +73,48 @@ function myFuntion(xml){
   document.getElementById("primario").appendChild(instru);
 
 
+ }
+ function forma_enun(){
+	var a_esconder = document.getElementsByClassName("solicitud-enun-img");
+	if(document.getElementById("carct-enun_0").checked){
+		
+		Array.prototype.forEach.call(a_esconder, function(el){
+			el.style.display="none";	
+		});		
+	}
+	else if(document.getElementById("carct-enun_1").checked){
+		Array.prototype.forEach.call(a_esconder, function(el){
+			el.style.display="inline";
+		});	
+	}
+	
+ }
+ function forma_op(){
+	 var textos_op = document.getElementsByClassName("txt-opt");
+	 var img_op = document.getElementsByClassName("input-img-opt");
+
+	 if(document.getElementById("carct-opt_0").checked){
+		Array.prototype.forEach.call(textos_op, function(img){
+			img.style.display="inline";
+		});
+		 Array.prototype.forEach.call(img_op, function(img){
+			 img.style.display="none";
+		 });
+	 }
+	 else if(document.getElementById("carct-opt_1").checked){
+		Array.prototype.forEach.call(textos_op, function(img){
+			img.style.display="inline";
+		});
+		Array.prototype.forEach.call(img_op, function(img){
+			img.style.display="inline";
+		});
+	 }
+	 else if(document.getElementById("carct-opt_2").checked){
+		Array.prototype.forEach.call(textos_op, function(img){
+			img.style.display="none";
+		});
+		Array.prototype.forEach.call(img_op, function(img){
+			img.style.display="inline";
+		});
+	 }
  }

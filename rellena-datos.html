@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Rellenador de Ítems</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="funcionalidades.js"></script>
+	</head>
+	
+<body>
+		
+		<main class="principal">
+			<header class="cabecera">
+			<h1>Rellenador de Ítems</h1>
+			</header>
+			<hr>
+			<div class="solicitud-caract">
+				<h2>Sección de Características de la Pregunta</h2>
+				<div class="solicitud-caract-block">
+					<h3>Forma de Enunciado</h3>
+					  <label>
+					    <input name="carct-enun" type="radio" id="carct-enun_0" value="op-ct-en" checked="checked" onchange="forma_enun()">
+					    Sólo Texto</label>
+					  <label>
+					    <input type="radio" name="carct-enun" value="op-ct-en" id="carct-enun_1" onchange="forma_enun()">
+					    Texto e Imagen</label>
+                </div>
+				
+				<div class="solicitud-caract-block">
+					<h3>Forma de Opciones</h3>
+					<label>
+					    <input name="carct-opt" type="radio" id="carct-opt_0" value="op-ct-opt" checked="checked" onchange="forma_op()">
+					    Sólo Texto</label>
+	
+					  <label>
+					    <input name="carct-opt" type="radio" id="carct-opt_1" value="op-ct-opt" onchange="forma_op()">
+					    Texto e Imagen</label>
+					<label>
+						<input name="carct-opt" type="radio" id="carct-opt_2" value="op-ct-opt" onchange="forma_op()">
+					    Sólo Imagen</label>
+				</div>
+				<br>
+				<div class="solicitud-caract-block">
+					<h3>Competencia</h3>
+					<select name="compt-select">
+						<option value="compt-1" selected="selected">Alfabetización Estadística</option>
+						<option value="compt-2">Razonamiento Estadístico</option>
+						
+					</select>
+				</div>
+				<div class="solicitud-caract-block">
+					<h3>Nivel Cognitivo</h3>
+					<select name="nv-select">
+					<option value="nv-1">Pre-Estructural</option>
+					<option value="nv-2">Uni-Estructural</option>
+					<option value="nv-3">Multi-Estructural</option>
+					<option value="nv-4">Relacional</option>
+					<option value="nv-5">Abstracto Extendido</option>
+					</select>
+				</div>
+				<div class="solicitud-caract-block">
+					<h3>Tema</h3>
+					<select name="tm-select">
+					<option value="tm-1">Tema 1</option>
+					<option value="tm-2">Tema 2</option>
+					<option value="tm-3">Tema 3</option>
+					<option value="tm-4">Tema 4</option>
+					<option value="tm-5">Tema 5</option>
+					</select>
+				</div>
+			</div>
+			<hr>
+			<div class="solicitud-pregunta">
+				<h2>Sección para los Enunciados</h2>
+				<div class="solicitud-enun">
+					<div class="solicitud-enun-enun">
+						<p>Enunciado en Español.</p>
+						<textarea class="input-enun" id="txt-enun-esp" placeholder="Texto del enunciado en español"></textarea>
+					</div>
+					<div class="solicitud-enun-img">
+						<p>Imagen del Enunciado en Español</p>
+						<input type="text" class="input-img-enun" placeholder="Enlace a la imagen que acompaña el enunciado">
+					</div>
+				</div>
+			  <div class="solicitud-enun">
+				<div class="solicitud-enun-enun">
+						<p>Enunciado en Inglés.</p>
+						<textarea type="text" class="input-enun" placeholder="Texto del enunciado en inglés"></textarea>
+					</div>
+					<div class="solicitud-enun-img">
+						<p>Imagen del Enunciado en Inglés</p>
+						<input type="text" class="input-img-enun" placeholder="Enlace a la imagen que acompaña el enunciado">
+					</div>
+				</div>
+			  <div class="solicitud-enun">
+				<div class="solicitud-enun-enun">
+						<p>Enunciado en Portugués.</p>
+						<textarea type="text" class="input-enun" placeholder="Texto del enunciado en portugués"></textarea>
+					</div>
+					<div class="solicitud-enun-img">
+						<p>Imagen del Enunciado en Portugués</p>
+						<input type="text" class="input-img-enun" placeholder="Enlace a la imagen que acompaña el enunciado">
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="solicitud-opciones">
+				<h2>Sección para las Opciones</h2>
+				<div class="sol-op-lang">
+				<p>Opciones en Español</p>
+				<div class="solicitud-op">
+					<p>A
+					<textarea type="text" class="txt-opt" placeholder="Texto opción A en Español"></textarea><input type="text" id="url-img-opt-A-esp" class="input-img-opt" placeholder="Enlace imagen opción A español"></p>
+					
+				</div>
+				<div class="solicitud-op">
+					<p>B
+						<textarea type="text" class="txt-opt" placeholder="Texto opción B en Español"></textarea><input type="text" id="url-img-opt-B-esp" class="input-img-opt" placeholder="Enlace imagen opción B español"></p>
+					
+				</div>
+					<br>
+				<div class="solicitud-op">
+					<p>C
+					<textarea type="text" class="txt-opt" placeholder="Texto opción C en Español"></textarea>
+					<input type="text" id="url-img-opt-C-esp" class="input-img-opt" placeholder="Enlace imagen opción C español"></p>
+					
+				</div>
+				<div class="solicitud-op">
+					<p>D
+					<textarea type="text" class="txt-opt" placeholder="Texto opción D en Español"></textarea>
+					<input type="text" id="url-img-opt-D-esp" class="input-img-opt" placeholder="Enlace imagen opción D español"></p>
+					
+				</div>
+				</div>
+			<hr>
+			<div class="sol-op-lang">
+				<p>Opciones en Inglés</p>
+				<div class="solicitud-op">
+					<p>A
+					<textarea type="text" class="txt-opt" placeholder="Texto opción A en Inglés"></textarea><input type="text" id="url-img-opt-A-ing" class="input-img-opt" placeholder="Enlace imagen opción A inglés"></p>
+					
+				</div>
+				<div class="solicitud-op">
+					<p>B
+						<textarea type="text" class="txt-opt" placeholder="Texto opción B en Inglés"></textarea><input type="text" id="url-img-opt-B-ing" class="input-img-opt" placeholder="Enlace imagen opción B inglés"></p>
+					
+				</div>
+					<br>
+				<div class="solicitud-op">
+					<p>C
+					<textarea type="text" class="txt-opt" placeholder="Texto opción C en Inglés"></textarea>
+					<input type="text" id="url-img-opt-C-ing" class="input-img-opt" placeholder="Enlace imagen opción C inglés"></p>
+					
+				</div>
+				<div class="solicitud-op">
+					<p>D
+					<textarea type="text" class="txt-opt" placeholder="Texto opción D en Inglés"></textarea>
+					<input type="text" id="url-img-opt-D-ing" class="input-img-opt" placeholder="Enlace imagen opción D inglés"></p>
+					
+				</div>
+			</div>
+				<hr>
+			<div class="sol-op-lang">
+				<p>Opciones en Portugués</p>
+				<div class="solicitud-op">
+					<p>A
+					<textarea type="text" class="txt-opt" placeholder="Texto opción A en Portugués"></textarea><input type="text" id="url-img-opt-A-por" class="input-img-opt" placeholder="Enlace imagen opción A portugués"></p>
+					
+				</div>
+				<div class="solicitud-op">
+					<p>B
+						<textarea type="text" class="txt-opt" placeholder="Texto opción B en Portugués"></textarea><input type="text" id="url-img-opt-B-por" class="input-img-opt" placeholder="Enlace imagen opción B portugués"></p>
+					
+				</div>
+					<br>
+				<div class="solicitud-op">
+					<p>C
+					<textarea type="text" class="txt-opt" placeholder="Texto opción C en Portugués"></textarea>
+					<input type="text" id="url-img-opt-C-por" class="input-img-opt" placeholder="Enlace imagen opción C portugués"></p>
+					
+				</div>
+				<div class="solicitud-op">
+					<p>D
+					<textarea type="text" class="txt-opt" placeholder="Texto opción D en Portugués"></textarea>
+					<input type="text" id="url-img-opt-D-por" class="input-img-opt" placeholder="Enlace imagen opción D portugués"></p>
+					
+				</div>
+				</div>
+			</div>
+			<div class="prev-preguntas">
+				
+			</div>
+		</main>
+		
+		
+	</body>
+</html>
